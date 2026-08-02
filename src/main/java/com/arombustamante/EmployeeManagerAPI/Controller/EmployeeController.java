@@ -20,6 +20,11 @@ public class EmployeeController {
         return employeeService.employeeList();
     }
 
+    @GetMapping("/{id}")
+    public Employee getById(@PathVariable Long id) {
+        return employeeService.employeeFindById(id);
+    }
+
     @PostMapping
     public Employee create(@RequestBody Employee employee) {
         return employeeService.employeeSave(employee);
