@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// Project api rest completed
+
 @RestController
 @RequestMapping("/api/employees")
 @CrossOrigin(origins = "*")
